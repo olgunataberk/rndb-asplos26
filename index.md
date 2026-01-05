@@ -22,7 +22,7 @@ layout: default
   <div class="hero-date">MARCH 23<sup>rd</sup>, 2026</div>
   <h1 class="hero-title">MCCSys 2026</h1>
   <h2 class="hero-subtitle">5th Workshop on Memory-Centric Computing Systems</h2>
-  <p class="hero-conference">In conjunction with the ACM International Conference on<br>Architectural Support for Programming Languages and Operating SystemsHigh-Performance Computer Architecture (ASPLOS 2026)</p>
+  <p class="hero-conference">In conjunction with the ACM International Conference on Architectural Support for Programming Languages<br>and Operating SystemsHigh-Performance Computer Architecture (ASPLOS 2026)</p>
   <p class="hero-location"> Pittsburgh, USA</p>
   <div class="hero-buttons">
     <a href="https://forms.gle/fGpn7xFMEAg2wb7q9" class="btn btn-primary" target="_blank">Submit Abstract</a>
@@ -224,7 +224,7 @@ We invite abstract submissions related to (but not limited to) the following top
 
 <div class="past-editions-grid">
   <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/hpca26-MCCSys/" target="_blank">4yh Workshop on Memory-Centric Computing Systems (MCCSys)</a>
+    <a href="https://events.safari.ethz.ch/hpca26-MCCSys/" target="_blank">4th Workshop on Memory-Centric Computing Systems (MCCSys)</a>
     <div class="past-edition-year">HPCA 2026</div>
   </div>
   <div class="past-edition-item">
