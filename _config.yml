@@ -1,0 +1,27 @@
+title: Fourth Workshop on Memory-Centric Computing Systems
+description: 4th Workshop on Memory-Centric Computing Systems (MCCSys) @ HPCA 2026
+baseurl: ""
+url: "https://unrealismail.github.io/mccsys-hpca26"
+
+# Theme settings
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+  - jekyll-remote-theme
+
+# Site settings
+show_downloads: false
+google_analytics:
+
+# Workshop details
+workshop:
+  title: "MCCSys 2026"
+  full_title: "4th Workshop on Memory-Centric Computing Systems"
+  date: "February 1st, 2026"
+  location: "Sydney, Australia"
+  venue: "International Convention Centre, Iron Wharf Place"
+  conference: "HPCA 2026"
+  conference_full: "32nd International Symposium on High-Performance Computer Architecture"
+  submission_deadline: "December 20, 2025"
+  notification_date: "December 27, 2025"
+  submission_form: "https://forms.gle/ZRtrBjfRjQT4FhUS8"
+  livestream: "TBD"
