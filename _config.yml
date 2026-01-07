@@ -1,7 +1,7 @@
 title: Fifth Workshop on Memory-Centric Computing Systems
 description: 5th Workshop on Memory-Centric Computing Systems (MCCSys) @ ASPLOS 2026
-baseurl: "/asplos26-MCCSys"
-url: "https://events.safari.ethz.ch"
+baseurl: ""
+url: "https://unrealismail.github.io/mccsys-asplos26"
 
 # Theme settings
 remote_theme: pages-themes/primer@v0.6.0
