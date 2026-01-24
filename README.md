@@ -1,32 +1,33 @@
-# MCCSys@ASPLOS'26 2026 - 5th Workshop on Memory-Centric Computing Systems
+# Ramulator & DRAM Bender Tutorial @ ASPLOS 2026
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://unrealismail.github.io/mccsys-asplos26/)
 
-Official website for the **5th Workshop on Memory-Centric Computing Systems (MCCSys)**, held in conjunction with [ASPLOS 2026]([https://hpca-conf.org/2026/](https://www.asplos-conference.org/asplos2026/)) in Pittsburgh, USA.
+Official website for the **Ramulator & DRAM Bender Tutorial: Cutting-Edge Infrastructures for Real and Future Memory System Evaluation**, held in conjunction with [ASPLOS 2026](https://www.asplos-conference.org/asplos2026/) in Pittsburgh, USA.
 
 ## 🗓️ Important Dates
 
-- **Submission Deadline:** February 10, 2026 (23:59 AoE)
-- **Notification:** February 17, 2026
-- **Workshop Date:** March 23, 2026 (Half Day)
+- **Tutorial Date:** March 22, 2026
 
-## 📋 About the Workshop
+## 📋 About the Tutorial
 
-Processing-in-Memory (PIM) is a computing paradigm that aims to overcome data movement bottlenecks by making memory systems compute-capable. This combined tutorial and workshop will focus on the latest advances in PIM technology, spanning both hardware and software.
+DRAM is predominantly used to build the main memory systems of modern computing devices. To improve performance, reliability, and security, it is critical to conduct both system-level simulation studies and experimental characterization of cutting-edge DRAM chips. 
+
+This tutorial+workshop will introduce simulation-based DRAM research together with experimental DRAM characterization using real DRAM chips. Participants will gain practical experience with two widely used infrastructures in industry and academia:
+
+- **Ramulator**: A cycle-accurate and extensible main memory simulator
+- **DRAM Bender**: An FPGA-based DRAM testing infrastructure
 
 ## 👥 Organizers
 
-- Ismail Emir Yuksel (ETH Zürich)
 - F. Nisa Bostanci (ETH Zürich)
 - Ataberk Olgun (ETH Zürich)
-- Dr. Zhiheng Yue (ETH Zürich)
-- Dr. Geraldo F. Oliveira (ETH Zürich)
-- Dr. Mohammad Sadrosadati (ETH Zürich)
+- Haocong Luo (ETH Zürich)
+- Ismail Emir Yuksel (ETH Zürich)
 - Professor Onur Mutlu (ETH Zürich)
 
 ## 📧 Contact
 
-For questions about the workshop, please contact: [ismail.yuksel@safari.ethz.ch](mailto:ismail.yuksel@safari.ethz.ch)
+For questions about the tutorial, please contact: [nisa.bostanci@safari.ethz.ch](mailto:nisa.bostanci@safari.ethz.ch)
 
 ---
 

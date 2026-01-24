@@ -4,45 +4,25 @@ layout: default
 
 <!-- Navigation Bar -->
 <nav class="nav-bar">
-  <a href="#" class="nav-brand">MCCSys@ASPLOS26</a>
+  <a href="#" class="nav-brand">Ramulator & DRAM Bender Tutorial @ ASPLOS26</a>
   <div class="nav-links">
     <a href="#about">About</a>
-    <a href="#call-for-presentations">Call for Presentations</a>
-    <a href="#key-dates">Key Dates</a>
     <a href="#agenda">Agenda</a>
+    <a href="#speakers">Speakers</a>
     <a href="#livestream">Livestream</a>
     <a href="#organizers">Organizers</a>
-    <a href="#past-editions">Past Editions</a>
-    <a href="#venue">Venue</a>
   </div>
 </nav>
 
 <!-- Hero Section -->
 <div class="hero-section">
-  <div class="hero-date">MARCH 23<sup>rd</sup>, 2026</div>
-  <h1 class="hero-title">MCCSys 2026</h1>
-  <h2 class="hero-subtitle">5th Workshop on Memory-Centric Computing Systems</h2>
-  <p class="hero-conference">In conjunction with the ACM International Conference on Architectural Support for Programming Languages<br>and Operating SystemsHigh-Performance Computer Architecture (ASPLOS 2026)</p>
-  <p class="hero-location"> Pittsburgh, USA</p>
+  <div class="hero-date">MARCH 22<sup>nd</sup>, 2026</div>
+  <h1 class="hero-title">Ramulator & DRAM Bender Tutorial</h1>
+  <h2 class="hero-subtitle">Cutting-Edge Infrastructures for Real and Future Memory System Evaluation</h2>
+  <p class="hero-conference">In conjunction with the ACM International Conference on Architectural Support for Programming Languages<br>and Operating Systems (ASPLOS 2026)</p>
+  <p class="hero-location">Pittsburgh, USA</p>
   <div class="hero-buttons">
-    <a href="https://forms.gle/fGpn7xFMEAg2wb7q9" class="btn btn-primary" target="_blank">Submit Abstract</a>
-    <a href="https://www.asplos-conference.org/asplos2026/" class="btn btn-secondary" target="_blank">Register Now</a>
-  </div>
-</div>
-
-<!-- Important Dates Sidebar -->
-<div class="dates-sidebar">
-  <div class="date-item">
-    <div class="date-label">Submission Deadline</div>
-    <div class="date-value">February 10th, 2026</div>
-  </div>
-  <div class="date-item">
-    <div class="date-label">Notification Date</div>
-    <div class="date-value">February 17th, 2026</div>
-  </div>
-  <div class="date-item">
-    <div class="date-label">Workshop Date</div>
-    <div class="date-value">March 23rd, 2026</div>
+    <a href="https://www.asplos-conference.org/asplos2026/" class="btn btn-primary" target="_blank">Register Now</a>
   </div>
 </div>
 
@@ -50,46 +30,43 @@ layout: default
 
 ## About {#about}
 
-**Processing-in-Memory (PIM)** is a computing paradigm that aims to overcome data movement bottlenecks by making memory systems compute-capable. Explored over several decades since the 1960s, PIM systems are now becoming a reality with the advent of the first commercial products and prototypes. PIM can improve performance and energy efficiency for many modern applications. However, there are many open questions spanning the entire computing stack and many challenges for widespread adoption.
+DRAM is predominantly used to build the main memory systems of modern computing
+devices. To improve performance, reliability, and security, it is critical to
+conduct both system-level simulation studies and experimental characterization
+of cutting-edge DRAM chips. Simulation enables understanding of the complex
+interactions between DRAM, emerging memory technologies, and modern
+applications, while real-chip characterization provides concrete insights into
+DRAM performance, robustness, latency, and power under different conditions
+(e.g., temperature and voltage).
 
-This combined **tutorial and workshop** will focus on the latest advances in PIM technology, spanning both hardware and software. It will include novel PIM ideas, different tools and frameworks for conducting PIM research, and programming techniques and optimization strategies for PIM kernels. First, we will provide a series of lectures and invited talks that will provide an introduction to PIM, including an overview and a rigorous analysis of existing PIM hardware from industry and academia. Second, we will invite the broad PIM research community to submit and present their ongoing work on memory-centric systems. The program committee will favor papers that bring new insights on memory-centric systems or novel PIM-friendly applications, address key system integration challenges in academic or industry PIM architectures, or put forward controversial points of view on the memory-centric execution paradigm. We also consider position papers, especially from industry, that outline design and process challenges affecting PIM systems, new PIM architectures, or system solutions for real state-of-the-art PIM devices.
+This tutorial+workshop will introduce simulation-based DRAM research together
+with experimental DRAM characterization using real DRAM chips. Participants will
+gain practical experience with two widely used infrastructures in industry and
+academia: **Ramulator**, a cycle-accurate and extensible main memory simulator,
+and **DRAM Bender**, an FPGA-based DRAM testing infrastructure.
 
----
+### Ramulator
 
-## Call for Presentations {#call-for-presentations}
+Ramulator is an extensible main memory simulator that provides cycle-level
+performance models for a variety of commercial DRAM standards (e.g., DDR3/4,
+LPDDR3/4, GDDR5, HBM), emerging memory technologies, and academic proposals. Its
+modular design enables easy integration of additional standards, technologies,
+and mechanisms. Ramulator is written in C++ and can be easily integrated into
+both full-system simulators, such as gem5, as well as other microarchitectural
+simulators, zsim, and Virtuoso.
 
-This workshop consists of invited talks on the general topic of memory-centric computing systems. There are a limited number of slots for invited talks. If you would like to deliver a talk on related topics, **please contact us by filling out [this form](https://forms.gle/6xwQYU4Ehs3Hrk7A9)**.
+### DRAM Bender
 
-We invite abstract submissions related to (but not limited to) the following topics in the context of memory-centric computing systems:
-  * Design of novel and new processing-in-memory (PIM) architectures, including system solutions for real state-of-the-art PIM devices
-  * Analysis and mapping of novel applications to state-of-the-art PIM systems
-  * Programming models and code generation support for PIM
-  * Runtime engines for adaptive code and data scheduling, data mapping, access control for PIM systems
-  * Memory coherence mechanisms for collaborative host–PIM execution
-  * Virtual memory support for a unified host and PIM address space
-  * Data structures and algorithms for PIM systems
-  * Infrastructures to assess the benefits and feasibility of PIM systems, including benchmarks and simulation infrastructures for PIM prototyping
-  * Issues related to robustness and security of PIM systems
-  * Experimental analysis and benchmarking of real PIM systems
+DRAM Bender (based on SoftMC), is an FPGA-based DRAM testing infrastructure.
+DRAM Bender provides simple and intuitive high-level programming interfaces in
+C++ and Python. A user of DRAM Bender writes DRAM test programs in a high-level
+language. DRAM Bender's programmer interface automatically translates these
+programs into low-level DRAM Bender instructions (e.g., DRAM commands,
+arithmetic, memory, control-flow instructions) on the FPGA. Thereby, DRAM Bender
+enables users with diverse technical backgrounds to rapidly characterize DRAM
+without requiring logic design expertise.
 
----
-
-## Key Dates {#key-dates}
-
-<div class="key-dates-section">
-  <div class="key-date-row">
-    <span class="key-date-label">Submission Deadline</span>
-    <span class="key-date-value">February 10, 2026 (23:59 AoE)</span>
-  </div>
-  <div class="key-date-row">
-    <span class="key-date-label">Notification of Acceptance</span>
-    <span class="key-date-value">February 17, 2026</span>
-  </div>
-  <div class="key-date-row">
-    <span class="key-date-label">Workshop Date</span>
-    <span class="key-date-value">March 23, 2026 (Half Day)</span>
-  </div>
-</div>
+**Time & Location:** TBD
 
 ---
 
@@ -97,7 +74,7 @@ We invite abstract submissions related to (but not limited to) the following top
 
 <div class="agenda-placeholder">
   <p><strong>Program Schedule Coming Soon</strong></p>
-  <p>The detailed agenda will be announced after the acceptance notifications.</p>
+  <p>The detailed agenda will be announced closer to the tutorial date.</p>
 </div>
 
 ### Invited Speakers {#speakers}
@@ -112,13 +89,13 @@ We invite abstract submissions related to (but not limited to) the following top
 
 <div class="livestream-section">
   <h3>🔴 Can't attend in person? Join us live!</h3>
-  <p>The workshop will be livestreamed on YouTube. A replay will also be available afterwards.</p>
+  <p>The tutorial will be livestreamed on YouTube. A replay will also be available afterwards.</p>
   
   <div class="youtube-embed">
-    <iframe src="https://www.youtube.com/embed/3wtg4sTp1qw" title="MCCSys 2026 Livestream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed" title="Ramulator & DRAM Bender Tutorial Livestream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   
-  <a href="https://youtube.com/live/3wtg4sTp1qw" class="livestream-link" target="_blank">▶️ Watch on YouTube</a>
+  <a href="https://youtube.com/live" class="livestream-link" target="_blank">▶️ Watch on YouTube</a>
 </div>
 
 ---
@@ -126,18 +103,6 @@ We invite abstract submissions related to (but not limited to) the following top
 ## Organizers {#organizers}
 
 <div class="organizers-section">
-
-<div class="organizer-item">
-  <div class="organizer-photo">
-    <img src="https://kratos4.ethz.ch/wp-content/uploads/photo_ismail.png" alt="Ismail Emir Yuksel">
-  </div>
-  <div class="organizer-info">
-    <h4><a href="https://www.linkedin.com/in/ismail-emir-yuksel/" target="_blank">Ismail Emir Yuksel</a></h4>
-    <div class="organizer-affiliation">ETH Zürich</div>
-    <p class="organizer-bio">Ismail Emir Yuksel is a 2nd-year PhD student in the SAFARI Research Group at ETH Zurich under the supervision of Prof. Onur Mutlu. His current broader research interests are in computer architecture, processing-in-memory, and hardware security, focusing on understanding, enhancing, and exploiting fundamental computational capabilities of modern DRAM architectures. His recent publications show that commodity DRAM chips, without any modification to the chip itself (only with modifications to the memory controller), are able to execute bulk-bitwise computation and data movement operations (including NAND, NOR, NOT, AND, OR, MAJority, multi-row copy, and initialization functions) in a reasonably robust manner.</p>
-    <div class="organizer-email">📧 <a href="mailto:ismail.yuksel@safari.ethz.ch">ismail.yuksel@safari.ethz.ch</a></div>
-  </div>
-</div>
 
 <div class="organizer-item">
   <div class="organizer-photo">
@@ -165,47 +130,31 @@ We invite abstract submissions related to (but not limited to) the following top
 
 <div class="organizer-item">
   <div class="organizer-photo">
-    <img src="https://safari.ethz.ch/wp-content/uploads/Foto-ZhihengYue.jpg" alt="Dr. Zhiheng Yue">
+    <img src="https://safari.ethz.ch/wp-content/uploads/haocong_luo.jpeg" alt="Haocong Luo">
   </div>
   <div class="organizer-info">
-    <h4><a href="https://ihpcs.ethz.ch/people/person-detail.MzY4MzA0.TGlzdC8zOTQxLDc2NTU1MzE0Mg==.html" target="_blank">Dr. Zhiheng Yue</a></h4>
+    <h4><a href="#" target="_blank">Haocong Luo</a></h4>
     <div class="organizer-affiliation">ETH Zürich</div>
-    <p class="organizer-bio">Zhiheng Yue is a postdoctoral researcher at ETH Zurich, working with Prof. Onur Mutlu. He received the B.S. degree in electronic science and technology from the Beijing University of Posts and Telecommunications, Beijing, China, in 2017, and the M.S. degree in electrical and computer engineering from the University of Michigan, Ann Arbor, MI, USA, in 2019, and the Ph.D. degree in electronic science and technology from Tsinghua University, Beijing, in 2024. His current research interests include deep learning, Processing-in-memory, AI acceleration, 3D stacking, and very-large-scale-integration (VLSI) design.
-</p>
-    <div class="organizer-email">📧 <a href="mailto:zhiheng.yue@safari.ethz.ch">zhiheng.yue@safari.ethz.ch</a></div>
+    <div class="organizer-email">📧 <a href="mailto:haocong.luo@safari.ethz.ch">haocong.luo@safari.ethz.ch</a></div>
   </div>
 </div>
 
 
 <div class="organizer-item">
   <div class="organizer-photo">
-    <img src="https://media.licdn.com/dms/image/v2/C5603AQGJ837GRBjHWw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516896754946?e=1768435200&v=beta&t=RjcEOR5-dlvU1nbKvLzmBxOc6X3gvokNkA-VutRP9f8" alt="Dr. Mohammad Sadrosadati">
+    <img src="https://kratos4.ethz.ch/wp-content/uploads/photo_ismail.png" alt="Ismail Emir Yuksel">
   </div>
   <div class="organizer-info">
-    <h4><a href="https://www.linkedin.com/in/mohammad-sadrosadati-23928a40" target="_blank">Dr. Mohammad Sadrosadati</a></h4>
+    <h4><a href="https://www.linkedin.com/in/ismail-emir-yuksel/" target="_blank">Ismail Emir Yuksel</a></h4>
     <div class="organizer-affiliation">ETH Zürich</div>
-    <p class="organizer-bio">Mohammad Sadrosadati received the B.Sc., M.Sc., and Ph.D. degrees in Computer Engineering from Sharif University of Technology, Tehran, Iran, in 2012, 2014, and 2019, respectively. He spent one year, from April 2017 to April 2018, as an academic guest at ETH Zurich, hosted by Prof. Onur Mutlu during his Ph.D. program. He is currently a senior researcher and lecturer at ETH Zurich, working under the supervision of Prof. Onur Mutlu. His research interests are in the areas of heterogeneous computing, processing-in-memory, memory systems, and interconnection networks. Due to his achievements and impact on improving the energy efficiency of GPUs, he won the Khwarizmi Youth Award, one of the most prestigious awards, as the first laureate in 2020, to honor and embolden him to keep taking even bigger steps in his research career.
-</p>
-    <div class="organizer-email">📧 <a href="mailto:mohammad.sadrosadati@safari.ethz.ch">mohammad.sadrosadati@safari.ethz.ch</a></div>
-  </div>
-</div>
-
-<div class="organizer-item">
-  <div class="organizer-photo">
-    <img src="https://safari.ethz.ch/wp-content/uploads/photo-Geraldo.jpg" alt="Dr. Geraldo F. Oliveira">
-  </div>
-  <div class="organizer-info">
-    <h4><a href="https://geraldofojunior.github.io/" target="_blank">Dr. Geraldo F. Oliveira</a></h4>
-    <div class="organizer-affiliation">ETH Zürich</div>
-    <p class="organizer-bio">Geraldo F. Oliveira received a B.S. degree in computer science from the Federal University of Viçosa, Viçosa, Brazil, in 2015, an M.S. degree in computer science from the Federal University of Rio Grande do Sul, Porto Alegre, Brazil, in 2017, and a Ph.D. degree in computer science from ETH Zürich, Zürich, Switzerland, in 2025, advised by Prof. Onur Mutlu. His current research interests include system support for processing-in-memory and processing-using-memory architectures, data-centric accelerators for emerging applications, approximate computing, and emerging memory systems for consumer devices. He has several publications on these topics.</p>
-    <div class="organizer-email">📧 <a href="mailto:geraldod@safari.ethz.ch">geraldod@safari.ethz.ch</a></div>
+    <div class="organizer-email">📧 <a href="mailto:ismail.yuksel@safari.ethz.ch">ismail.yuksel@safari.ethz.ch</a></div>
   </div>
 </div>
 
 
 <div class="organizer-item">
   <div class="organizer-photo">
-    <img src="https://kratos4.ethz.ch/wp-content/uploads/omutlu-crop.jpg" alt="Prof. Onur Mutlu">
+    <img src="https://people.inf.ethz.ch/omutlu/img/OnurMutlu_eth.jpg" alt="Prof. Onur Mutlu">
   </div>
   <div class="organizer-info">
     <h4><a href="https://people.inf.ethz.ch/omutlu/" target="_blank">Professor Onur Mutlu</a></h4>
@@ -218,47 +167,6 @@ We invite abstract submissions related to (but not limited to) the following top
 
 </div>
 
----
-
-## Past Editions {#past-editions}
-
-<div class="past-editions-grid">
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/hpca26-MCCSys/" target="_blank">4th Workshop on Memory-Centric Computing Systems (MCCSys)</a>
-    <div class="past-edition-year">HPCA 2026</div>
-  </div>
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/isca25-MCCSys/" target="_blank">3rd Workshop on Memory-Centric Computing Systems (MCCSys)</a>
-    <div class="past-edition-year">ISCA 2025</div>
-  </div>
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/ics25-MCCSys/" target="_blank">2nd Workshop on Memory-Centric Computing Systems (MCCSys)</a>
-    <div class="past-edition-year">ICS 2025</div>
-  </div>
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/asplos25-MCCSys/" target="_blank">1st Workshop on Memory-Centric Computing Systems (MCCSys)</a>
-    <div class="past-edition-year">ASPLOS 2025</div>
-  </div>
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/ppopp25-memorycentric-tutorial/" target="_blank">Tutorial on Memory-Centric Computing Systems</a>
-    <div class="past-edition-year">PPoPP 2025</div>
-  </div>
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/micro24-memorycentric-tutorial/" target="_blank">Tutorial on Memory-Centric Computing Systems</a>
-    <div class="past-edition-year">MICRO 2024</div>
-  </div>
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/isca24-memorycentric-tutorial/" target="_blank">Tutorial on Memory-Centric Computing Systems</a>
-    <div class="past-edition-year">ISCA 2024</div>
-  </div>
-  <div class="past-edition-item">
-    <a href="https://events.safari.ethz.ch/heart24-memorycentric-tutorial/" target="_blank">Tutorial on Memory-Centric Computing Systems</a>
-    <div class="past-edition-year">HEART 2024</div>
-  </div>
-</div>
-
----
-
 ## Event Location {#venue}
 
 <div class="event-grid">
@@ -266,7 +174,7 @@ We invite abstract submissions related to (but not limited to) the following top
     <h3>Venue</h3>
     <p><strong>The Landing Hotel</strong></p>
     <p>757 Casino Dr. Pittsburgh<br>PA 15212<br>Pittsburgh<br>USA</p>
-    <p>The workshop will be held in conjunction with <a href="https://www.asplos-conference.org/asplos2026/" target="_blank">ASPLOS 2026</a>.</p>
+    <p>The tutorial will be held in conjunction with <a href="https://www.asplos-conference.org/asplos2026/" target="_blank">ASPLOS 2026</a>.</p>
     <p>For registration and accommodation information, please visit the <a href="https://www.asplos-conference.org/asplos2026/" target="_blank">ASPLOS 2026 website</a>.</p>
   </div>
   <div class="event-map">
@@ -279,14 +187,13 @@ We invite abstract submissions related to (but not limited to) the following top
 ## Contact {#contact}
 
 <div class="contact-section">
-  <p>For questions about the workshop, please contact the organizers:</p>
-  <p><strong>General Inquiries:</strong> <a href="mailto:ismail.yuksel@safari.ethz.ch">ismail.yuksel@safari.ethz.ch</a></p>
+  <p>For questions about the tutorial, please contact the organizers:</p>
   <p><strong>SAFARI Research Group:</strong> <a href="https://safari.ethz.ch/" target="_blank">safari.ethz.ch</a></p>
 </div>
 
 ---
 
 <div class="footer-section">
-  <p>MCCSys@ASPLOS'26 | 5th Workshop on Memory-Centric Computing Systems</p>
+  <p>Ramulator+DRAM Bender Tutorial@ASPLOS'26</p>
   <p>In conjunction with <a href="https://www.asplos-conference.org/asplos2026/" target="_blank">ASPLOS 2026</a> | Pittsburgh, USA</p>
 </div>

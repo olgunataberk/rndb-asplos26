@@ -2,19 +2,19 @@
 ---
 
 /* MCCSys 2026 - Custom Styles */
-/* Purple theme with modern enhancements */
+/* Blue theme with modern enhancements */
 
 :root {
-  --primary-color: #5c2d91;
-  --primary-light: #7b4aad;
-  --primary-dark: #3d1a5e;
-  --accent-color: #9b59b6;
-  --accent-light: #bb8fce;
+  --primary-color: #1e5ba8;
+  --primary-light: #3a7bc8;
+  --primary-dark: #124178;
+  --accent-color: #2980b9;
+  --accent-light: #5dade2;
   --text-color: #2d2d2d;
   --text-light: #555555;
-  --bg-light: #f9f7fc;
-  --bg-gradient: linear-gradient(135deg, #5c2d91 0%, #7b4aad 50%, #9b59b6 100%);
-  --card-shadow: 0 4px 15px rgba(92, 45, 145, 0.15);
+  --bg-light: #f7f9fc;
+  --bg-gradient: linear-gradient(135deg, #1e5ba8 0%, #3a7bc8 50%, #2980b9 100%);
+  --card-shadow: 0 4px 15px rgba(30, 91, 168, 0.15);
   --border-radius: 12px;
 }
 
@@ -40,8 +40,8 @@ body {
   padding: 0.8rem 2rem;
   margin: 0 -2rem 2rem -2rem;
   z-index: 100;
-  border-bottom: 1px solid rgba(92, 45, 145, 0.1);
-  box-shadow: 0 2px 20px rgba(92, 45, 145, 0.08);
+  border-bottom: 1px solid rgba(30, 91, 168, 0.1);
+  box-shadow: 0 2px 20px rgba(30, 91, 168, 0.08);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -89,7 +89,7 @@ body {
   background: var(--primary-color);
   color: white !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(92, 45, 145, 0.3);
+  box-shadow: 0 4px 15px rgba(30, 91, 168, 0.3);
 }
 
 /* Legacy support */
@@ -102,9 +102,9 @@ body {
   padding: 1rem 2rem;
   margin: 0 -2rem 2rem -2rem;
   z-index: 100;
-  border-bottom: 1px solid rgba(92, 45, 145, 0.1);
+  border-bottom: 1px solid rgba(30, 91, 168, 0.1);
   text-align: center;
-  box-shadow: 0 2px 20px rgba(92, 45, 145, 0.08);
+  box-shadow: 0 2px 20px rgba(30, 91, 168, 0.08);
 }
 
 .nav-buttons a {
@@ -127,7 +127,7 @@ body {
   background: var(--primary-color);
   color: white !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(92, 45, 145, 0.3);
+  box-shadow: 0 4px 15px rgba(30, 91, 168, 0.3);
 }
 
 .nav-buttons a::before {

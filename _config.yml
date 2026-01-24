@@ -1,10 +1,11 @@
-title: Fifth Workshop on Memory-Centric Computing Systems
-description: 5th Workshop on Memory-Centric Computing Systems (MCCSys) @ ASPLOS 2026
+title: Ramulator+DRAM Bender Tutorial @ ASPLOS 2026
+description: Cutting-Edge Infrastructures for Real and Future Memory System Evaluation @ ASPLOS 2026
 baseurl: ""
 url: "https://unrealismail.github.io/mccsys-asplos26"
 
 # Theme settings
-remote_theme: pages-themes/primer@v0.6.0
+# remote_theme: pages-themes/primer@v0.6.0
+theme: minima
 plugins:
   - jekyll-remote-theme
 
@@ -12,16 +13,13 @@ plugins:
 show_downloads: false
 google_analytics:
 
-# Workshop details
+# Tutorial details
 workshop:
-  title: "MCCSys 2026"
-  full_title: "5th Workshop on Memory-Centric Computing Systems"
-  date: "March 23rd, 2026"
+  title: "Ramulator+DRAM Bender Tutorial"
+  full_title: "Cutting-Edge Infrastructures for Real and Future Memory System Evaluation"
+  date: "March 22nd, 2026"
   location: "Pittsburgh, USA"
   venue: "The Landing Hotel, 757 Casino Dr. Pittsburgh, PA 15212, Pittsburgh"
   conference: "ASPLOS 2026"
   conference_full: "ACM International Conference on Architectural Support for Programming Languages and Operating Systems"
-  submission_deadline: "February 10, 2026"
-  notification_date: "February 17, 2026"
-  submission_form: "https://forms.gle/YaDWBmxfca7mYdSp8"
   livestream: "TBD"
