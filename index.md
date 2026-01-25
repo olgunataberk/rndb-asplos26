@@ -41,9 +41,7 @@ DRAM performance, robustness, latency, and power under different conditions
 (e.g., temperature and voltage).
 
 This tutorial+workshop will introduce simulation-based DRAM research together
-with experimental DRAM characterization using real DRAM chips. Participants will
-gain practical experience with two widely used infrastructures in industry and
-academia: <a href="https://github.com/CMU-SAFARI/ramulator2">Ramulator</a>, a cycle-accurate and extensible main memory simulator,
+with experimental DRAM characterization using real DRAM chips. We will provide an extensive overview of: <a href="https://github.com/CMU-SAFARI/ramulator2">Ramulator</a>, a cycle-accurate and extensible main memory simulator,
 and <a href="https://github.com/CMU-SAFARI/DRAM-Bender">DRAM Bender</a>, an FPGA-based DRAM testing infrastructure.
 
 ### Ramulator
@@ -53,8 +51,6 @@ and <a href="https://github.com/CMU-SAFARI/DRAM-Bender">DRAM Bender</a>, an FPGA
 ### DRAM Bender
 
 <span class="emph-nobreak">DRAM Bender</span> (based on SoftMC), is <span class="emph-nobreak">an FPGA-based DRAM testing infrastructure</span>. DRAM Bender provides <span class="emph-nobreak">simple and intuitive high-level programming interfaces</span> in C++ and Python. A user of DRAM Bender writes DRAM test programs in a high-level language. DRAM Bender's programmer interface automatically translates these programs into low-level DRAM Bender instructions (e.g., DRAM commands, arithmetic, memory, control-flow instructions) on the FPGA. Thereby, DRAM Bender enables users with diverse technical backgrounds to <span class="emph-nobreak">rapidly characterize DRAM without requiring logic design expertise</span>.
-
-**Time & Location:** TBD
 
 ---
 
@@ -119,7 +115,7 @@ and <a href="https://github.com/CMU-SAFARI/DRAM-Bender">DRAM Bender</a>, an FPGA
 
 <div class="organizer-item">
   <div class="organizer-photo">
-    <img src="https://safari.ethz.ch/wp-content/uploads/haocong_luo.jpeg" alt="Haocong Luo">
+    <img src="https://safari.ethz.ch/wp-content/uploads/2020/06/Haocong_crop.jpg" alt="Haocong Luo">
   </div>
   <div class="organizer-info">
     <h4><a href="#" target="_blank">Haocong Luo</a></h4>
