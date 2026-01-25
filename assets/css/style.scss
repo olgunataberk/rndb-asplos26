@@ -1086,3 +1086,125 @@ hr {
     height: 70px;
   }
 }
+
+/* Paper Citations */
+.papers-section {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.paper-card {
+  background: white;
+  border: 2px solid #e3f0ff;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--bg-gradient);
+  transition: width 0.3s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(30, 91, 168, 0.2);
+  border-color: var(--accent-light);
+}
+
+.paper-card:hover::before {
+  width: 6px;
+}
+
+.paper-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--bg-gradient);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(30, 91, 168, 0.2);
+}
+
+.paper-authors {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.paper-title {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.paper-venue {
+  display: inline-block;
+  background: var(--bg-light);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.paper-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 1rem;
+  background: var(--primary-color);
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.paper-link:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 91, 168, 0.3);
+}
+
+@media (max-width: 768px) {
+  .paper-card {
+    padding: 1.2rem;
+  }
+  
+  .paper-authors {
+    font-size: 0.9rem;
+  }
+  
+  .paper-title {
+    font-size: 1rem;
+  }
+}

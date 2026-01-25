@@ -48,9 +48,61 @@ and <a href="https://github.com/CMU-SAFARI/DRAM-Bender">DRAM Bender</a>, an FPGA
 
 <span class="emph-nobreak">Ramulator</span> is an extensible main memory simulator that provides <span class="emph-nobreak">cycle-level performance models for a variety of commercial DRAM standards</span> (e.g., DDR3/4, LPDDR3/4, GDDR5, HBM), <span class="emph-nobreak">emerging memory technologies</span>, and <span class="emph-nobreak">academic proposals</span>. Its modular design enables easy integration of additional standards, technologies, and mechanisms. Ramulator is written in C++ and can be easily integrated into both full-system simulators, such as <span class="emph-nobreak">gem5</span>, as well as other microarchitectural simulators, <span class="emph-nobreak">zsim</span>, and <span class="emph-nobreak">Virtuoso</span>.
 
+<div class="papers-section">
+
+<div class="paper-card">
+  <div class="paper-icon">📄</div>
+  <div class="paper-authors">Haocong Luo, Yahya Can Tugrul, F. Nisa Bostanci, Ataberk Olgun, A. Giray Yaglikci, and Onur Mutlu</div>
+  <div class="paper-title">Ramulator 2.0: A Modern, Modular, and Extensible DRAM Simulator</div>
+  <span class="paper-venue">IEEE CAL, 2024</span>
+  <div class="paper-links">
+    <a href="https://github.com/CMU-SAFARI/ramulator2" class="paper-link" target="_blank">🔗 GitHub</a>
+    <a href="https://people.inf.ethz.ch/omutlu/pub/Ramulator2_arxiv23.pdf" class="paper-link" target="_blank">📖 Paper</a>
+  </div>
+</div>
+
+<div class="paper-card">
+  <div class="paper-icon">📄</div>
+  <div class="paper-authors">Yoongu Kim, Weikun Yang, and Onur Mutlu</div>
+  <div class="paper-title">Ramulator: A Fast and Extensible DRAM Simulator</div>
+  <span class="paper-venue">IEEE CAL, 2015</span>
+  <div class="paper-links">
+    <a href="https://github.com/CMU-SAFARI/ramulator" class="paper-link" target="_blank">🔗 GitHub</a>
+    <a href="https://users.ece.cmu.edu/~omutlu/pub/ramulator_dram_simulator-ieee-cal15.pdf" class="paper-link" target="_blank">📖 Paper</a>
+  </div>
+</div>
+
+</div>
+
 ### DRAM Bender
 
 <span class="emph-nobreak">DRAM Bender</span> (based on SoftMC), is <span class="emph-nobreak">an FPGA-based DRAM testing infrastructure</span>. DRAM Bender provides <span class="emph-nobreak">simple and intuitive high-level programming interfaces</span> in C++ and Python. A user of DRAM Bender writes DRAM test programs in a high-level language. DRAM Bender's programmer interface automatically translates these programs into low-level DRAM Bender instructions (e.g., DRAM commands, arithmetic, memory, control-flow instructions) on the FPGA. Thereby, DRAM Bender enables users with diverse technical backgrounds to <span class="emph-nobreak">rapidly characterize DRAM without requiring logic design expertise</span>.
+
+<div class="papers-section">
+
+<div class="paper-card">
+  <div class="paper-icon">📄</div>
+  <div class="paper-authors">Ataberk Olgun, Hasan Hassan, A. Giray Yaglikci, Yahya Can Tugrul, Lois Orosa, Haocong Luo, Minesh Patel, Oguz Ergin, Onur Mutlu</div>
+  <div class="paper-title"> "DRAM Bender: An Extensible and Versatile FPGA-based Infrastructure to Easily Test State-of-the-art DRAM Chips"</div>
+  <span class="paper-venue">IEEE TCAD, 2023</span>
+  <div class="paper-links">
+    <a href="https://github.com/CMU-SAFARI/DRAM-Bender" class="paper-link" target="_blank">🔗 GitHub</a>
+    <a href="https://arxiv.org/pdf/2211.05838.pdf" class="paper-link" target="_blank">📖 Paper</a>
+  </div>
+</div>
+
+<div class="paper-card">
+  <div class="paper-icon">📄</div>
+  <div class="paper-authors">Hasan Hassan, Nandita Vijaykumar, Samira Khan, Saugata Ghose, Kevin Chang, Gennady Pekhimenko, Donghyuk Lee, Oguz Ergin, and Onur Mutlu</div>
+  <div class="paper-title">SoftMC: A Flexible and Practical Open-Source Infrastructure for Enabling Experimental DRAM Studies</div>
+  <span class="paper-venue">HPCA, 2017</span>
+  <div class="paper-links">
+    <a href="https://github.com/CMU-SAFARI/SoftMC" class="paper-link" target="_blank">🔗 GitHub</a>
+    <a href="https://people.inf.ethz.ch/omutlu/pub/softMC_hpca17.pdf" class="paper-link" target="_blank">📖 Paper</a>
+  </div>
+</div>
+
+</div>
 
 ---
 
