@@ -19,7 +19,7 @@ layout: default
 <div class="hero-section">
   <div class="hero-date">MARCH 22<sup>nd</sup>, 2026</div>
   <h1 class="hero-title">Ramulator & DRAM Bender Tutorial</h1>
-  <h2 class="hero-subtitle">Cutting-Edge Infrastructures for Real and Future Memory System Evaluation</h2>
+  <h2 class="hero-subtitle">Cutting-Edge Infrastructures for<br/>Real and Future Memory System Evaluation</h2>
   <p class="hero-conference">In conjunction with the ACM International Conference on Architectural Support for Programming Languages<br>and Operating Systems (ASPLOS 2026)</p>
   <p class="hero-location">Pittsburgh, USA</p>
   <div class="hero-buttons">
