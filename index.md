@@ -7,6 +7,7 @@ layout: default
   <a href="#" class="nav-brand">Ramulator & DRAM Bender Tutorial @ ASPLOS26</a>
   <div class="nav-links">
     <a href="#about">About</a>
+    <a href="#cfp">Call for Presentations</a>
     <a href="#agenda">Agenda</a>
     <a href="#speakers">Speakers</a>
     <a href="#livestream">Livestream</a>
@@ -103,6 +104,25 @@ and <a href="https://github.com/CMU-SAFARI/DRAM-Bender">DRAM Bender</a>, an FPGA
 </div>
 
 </div>
+
+---
+
+## Call for Presentations {#cfp}
+This workshop includes invited talks on DRAM characterization and memory system simulation using Ramulator and DRAM Bender. A limited number of slots are available for invited presentations.
+If you are interested in delivering a talk on related topics please submit a brief proposal with an extended abstract of your work (along with a brief bio) by filling out <a href="https://forms.gle/nzEKRA32B3UM2z4T8">this form</a>. We invite abstract submissions related to (but not limited to) the following topics:
+
+<ul>
+<li> New features, extensions, or enhancements to Ramulator
+<li> Use of Ramulator for evaluating memory performance, emerging memory technologies, or architectural mechanisms
+<li> DRAM characterization studies conducted using DRAM Bender
+<li> Reliability, failure analysis, or security studies using DRAM Bender
+<li> Cross-layer research that combines memory system simulation (Ramulator) with real-chip DRAM characterization (DRAM Bender)
+<li> Benchmarks, workloads, or methodologies for DRAM studies using Ramulator or DRAM Bender
+<li> Open-source tools, software extensions, datasets, or reusable components built on top of Ramulator or DRAM Bender
+<li> Case studies demonstrating how Ramulator or DRAM Bender enabled new research insights or the validation of ideas
+</ul>
+
+We especially encourage early-stage research, work-in-progress results, experimental methodologies, and community contributions that will benefit researchers working with Ramulator or DRAM Bender.
 
 ---
 
