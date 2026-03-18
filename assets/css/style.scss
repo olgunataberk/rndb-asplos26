@@ -495,6 +495,255 @@ h3 {
   border: 2px dashed #ddd;
 }
 
+/* Invited Speakers Section */
+.speakers-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.speaker-card {
+  background: white;
+  border: 2px solid #e3f0ff;
+  border-radius: var(--border-radius);
+  padding: 1.75rem;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.speaker-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--bg-gradient);
+  transition: width 0.3s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(30, 91, 168, 0.2);
+  border-color: var(--accent-light);
+}
+
+.speaker-card:hover::before {
+  width: 6px;
+}
+
+.speaker-header {
+  margin-bottom: 1rem;
+}
+
+.speaker-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.2rem;
+}
+
+.speaker-affiliation {
+  font-size: 0.92rem;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.speaker-advisor {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-top: 0.15rem;
+}
+
+.speaker-talk-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  background: var(--bg-light);
+  border-left: 3px solid var(--accent-color);
+  padding: 0.6rem 0.9rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.speaker-abstract-label,
+.speaker-bio-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.speaker-abstract,
+.speaker-bio {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.speaker-bio {
+  color: var(--text-light);
+  font-size: 0.93rem;
+}
+
+@media (max-width: 768px) {
+  .speaker-card {
+    padding: 1.25rem;
+  }
+
+  .speaker-name {
+    font-size: 1.1rem;
+  }
+
+  .speaker-talk-title {
+    font-size: 0.97rem;
+  }
+}
+
+/* Schedule / Agenda Table */
+.schedule-section {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.session-block {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 0.5rem;
+}
+
+.session-header {
+  background: var(--bg-gradient);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.85rem 1.25rem;
+  letter-spacing: 0.3px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.97rem;
+  background: white;
+}
+
+.schedule-table thead tr {
+  background: var(--bg-light);
+}
+
+.schedule-table th {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-light);
+  font-weight: 600;
+  border-bottom: 2px solid #e3f0ff;
+}
+
+.schedule-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #eef3fa;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.schedule-table tbody tr:hover {
+  background: #f4f8ff;
+}
+
+.time-cell {
+  font-weight: 700;
+  color: var(--primary-color);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  min-width: 56px;
+}
+
+.duration-cell {
+  white-space: nowrap;
+  color: var(--text-light);
+  font-size: 0.88rem;
+  min-width: 100px;
+}
+
+.speaker-cell {
+  font-weight: 600;
+  color: var(--primary-dark);
+  min-width: 140px;
+  white-space: nowrap;
+}
+
+.schedule-break {
+  background: #fff8ec;
+  border: 1px solid #f0d9a0;
+  border-radius: var(--border-radius);
+  padding: 0.9rem 1.25rem;
+  text-align: center;
+  font-weight: 600;
+  color: #7a5c00;
+  font-size: 1rem;
+  margin: 1rem 0;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .schedule-table thead {
+    display: none;
+  }
+
+  .schedule-table,
+  .schedule-table tbody,
+  .schedule-table tr,
+  .schedule-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .schedule-table tr {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eef3fa;
+  }
+
+  .schedule-table tr:last-child {
+    border-bottom: none;
+  }
+
+  .schedule-table td {
+    padding: 0.15rem 0;
+    border-bottom: none;
+  }
+
+  .time-cell {
+    font-size: 1rem;
+  }
+
+  .duration-cell {
+    font-size: 0.85rem;
+  }
+
+  .speaker-cell {
+    white-space: normal;
+  }
+}
+
 /* Livestream Section */
 .livestream-section {
   background: var(--bg-light);

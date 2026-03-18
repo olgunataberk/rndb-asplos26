@@ -126,17 +126,134 @@ We especially encourage early-stage research, work-in-progress results, experime
 
 ---
 
-## Agenda & Workshop Materials {#agenda}
+## Tentative Agenda {#agenda}
 
-<div class="agenda-placeholder">
-  <p><strong>Program Schedule Coming Soon</strong></p>
-  <p>The detailed agenda will be announced closer to the tutorial date.</p>
+<div class="schedule-section">
+
+  <div class="session-block">
+    <div class="session-header">Afternoon Session &nbsp;·&nbsp; 13:30–15:30</div>
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Duration</th>
+          <th>Speaker</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time-cell">13:30</td>
+          <td class="duration-cell">20 min + Q&amp;A</td>
+          <td class="speaker-cell">TBD</td>
+          <td>Introduction to DRAM Bender and FPGA-Based Infrastructures for Memory Systems Research</td>
+        </tr>
+        <tr>
+          <td class="time-cell">14:00</td>
+          <td class="duration-cell">20 min + Q&amp;A</td>
+          <td class="speaker-cell">Ataberk Olgun</td>
+          <td>DRAM-Bender-Enabled Research Highlights</td>
+        </tr>
+        <tr>
+          <td class="time-cell">14:30</td>
+          <td class="duration-cell">10 min + Q&amp;A</td>
+          <td class="speaker-cell">Ataberk Olgun</td>
+          <td>DRAM Bender Hardware &amp; Software Overview</td>
+        </tr>
+        <tr>
+          <td class="time-cell">14:40</td>
+          <td class="duration-cell">15 min + Q&amp;A</td>
+          <td class="speaker-cell">Ataberk Olgun</td>
+          <td>DRAM Bender Example Use Demo</td>
+        </tr>
+        <tr>
+          <td class="time-cell">15:00</td>
+          <td class="duration-cell">25 min + Q&amp;A</td>
+          <td class="speaker-cell">Ranyang Zhou</td>
+          <td><em>Attacking DNN Intelligence via Memory-Based Fault Injection</em></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schedule-break">☕&nbsp;&nbsp;Coffee Break &nbsp;·&nbsp; 15:30–16:00</div>
+
+  <div class="session-block">
+    <div class="session-header">Afternoon Session Continued &nbsp;·&nbsp; 16:00–18:00</div>
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Duration</th>
+          <th>Speaker</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time-cell">16:00</td>
+          <td class="duration-cell">20 min + Q&amp;A</td>
+          <td class="speaker-cell">F. Nisa Bostanci</td>
+          <td>Introduction to Ramulator and Memory System Simulation</td>
+        </tr>
+        <tr>
+          <td class="time-cell">16:30</td>
+          <td class="duration-cell">20 min + Q&amp;A</td>
+          <td class="speaker-cell">F. Nisa Bostanci</td>
+          <td>Ramulator-Enabled Research Highlights</td>
+        </tr>
+        <tr>
+          <td class="time-cell">17:00</td>
+          <td class="duration-cell">25 min + Q&amp;A</td>
+          <td class="speaker-cell">Hwayong Nam</td>
+          <td><em>Our Experience with Ramulator and DRAM-Bender: Case Studies from DRAMScope and RoMe</em></td>
+        </tr>
+        <tr>
+          <td class="time-cell">17:30</td>
+          <td class="duration-cell">&lt;10 min</td>
+          <td class="speaker-cell">TBD</td>
+          <td>Closing Remarks</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>
 
 ### Invited Speakers {#speakers}
 
-<div class="speakers-placeholder">
-  <p><strong>Speakers To Be Announced</strong></p>
+<div class="speakers-section">
+
+  <div class="speaker-card">
+    <div class="speaker-header">
+      <div class="speaker-meta">
+        <div class="speaker-name">Ranyang Zhou</div>
+        <div class="speaker-affiliation">Ph.D. Candidate &nbsp;&middot;&nbsp; New Jersey Institute of Technology (NJIT)</div>
+        <div class="speaker-advisor">Advised by Prof. Shaahin Angizi</div>
+      </div>
+    </div>
+    <div class="speaker-talk-title">Attacking DNN Intelligence via Memory-Based Fault Injection</div>
+    <div class="speaker-abstract-label">Abstract</div>
+    <p class="speaker-abstract">This talk presents recent research on DRAM fault injection and its implications for deep neural network (DNN) reliability and security. Using experimental DRAM characterization frameworks such as DRAM Bender, we analyze disturbance-based attacks including RowHammer and RowPress and their ability to induce targeted bit flips in memory. We further demonstrate how such faults can be exploited to manipulate DNN behavior, highlighting new security challenges at the intersection of memory systems and machine learning workloads.</p>
+    <div class="speaker-bio-label">Bio</div>
+    <p class="speaker-bio">Ranyang Zhou is a Ph.D. candidate in Electrical and Computer Engineering at the New Jersey Institute of Technology (NJIT), working with Prof. Shaahin Angizi. His research focuses on processing-in-memory (PIM) and DRAM-based attack and defense mechanisms for machine learning systems. His work has appeared in leading venues including CVPR, DAC, ICCAD, DATE, ISLPED, and IEEE CAL. His recent research investigates DRAM fault injection attacks, including RowHammer and RowPress, and their implications for the reliability and security of AI systems, aiming to enable robust and secure next-generation computing platforms.</p>
+  </div>
+
+  <div class="speaker-card">
+    <div class="speaker-header">
+      <div class="speaker-meta">
+        <div class="speaker-name">Hwayong Nam</div>
+        <div class="speaker-affiliation">Ph.D. Candidate &nbsp;&middot;&nbsp; Seoul National University</div>
+        <div class="speaker-advisor">Advised by Prof. Jung Ho Ahn</div>
+      </div>
+    </div>
+    <div class="speaker-talk-title">Our Experience with Ramulator and DRAM-Bender: Case Studies from DRAMScope and RoMe</div>
+    <div class="speaker-abstract-label">Abstract</div>
+    <p class="speaker-abstract">This talk presents SCALE Lab's experience using two widely adopted research infrastructures for memory systems research: DRAM-Bender and Ramulator. It focuses on two representative case studies from our recent work. First, it covers DRAMScope, which uses DRAM-Bender and SoftMC to uncover DRAM microarchitectural behaviors and characteristics that are not visible from public specifications alone. Second, it covers RoMe, which uses Ramulator to explore a memory system with row-granularity access for large language model inference and to evaluate its system-level benefits. Through these two case studies, the talk highlights what kinds of research each infrastructure enables, what kinds of ideas each can evaluate effectively, and how both have been impactful in memory systems research.</p>
+    <div class="speaker-bio-label">Bio</div>
+    <p class="speaker-bio">Hwayong Nam is a Ph.D. candidate at Seoul National University, advised by Prof. Jung Ho Ahn. His research interests include memory systems, DRAM microarchitecture, memory reliability and security, and LLMs.</p>
+  </div>
+
 </div>
 
 ---
