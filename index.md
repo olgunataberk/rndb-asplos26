@@ -145,7 +145,7 @@ We especially encourage early-stage research, work-in-progress results, experime
         <tr>
           <td class="time-cell">13:30</td>
           <td class="duration-cell">20 min + Q&amp;A</td>
-          <td class="speaker-cell">TBD</td>
+          <td class="speaker-cell">Onur Mutlu / Ataberk Olgun</td>
           <td>Introduction to DRAM Bender and FPGA-Based Infrastructures for Memory Systems Research</td>
         </tr>
         <tr>
@@ -211,7 +211,7 @@ We especially encourage early-stage research, work-in-progress results, experime
         <tr>
           <td class="time-cell">17:30</td>
           <td class="duration-cell">&lt;10 min</td>
-          <td class="speaker-cell">TBD</td>
+          <td class="speaker-cell">Onur Mutlu / Ataberk Olgun</td>
           <td>Closing Remarks</td>
         </tr>
       </tbody>
