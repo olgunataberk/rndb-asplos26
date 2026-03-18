@@ -265,10 +265,10 @@ We especially encourage early-stage research, work-in-progress results, experime
   <p>The tutorial will be livestreamed on YouTube. A replay will also be available afterwards.</p>
   
   <div class="youtube-embed">
-    <iframe src="https://www.youtube.com/embed" title="Ramulator & DRAM Bender Tutorial Livestream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/6uAfgKs1JKI" title="Ramulator & DRAM Bender Tutorial Livestream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   
-  <a href="https://youtube.com/live" class="livestream-link" target="_blank">▶️ Watch on YouTube</a>
+  <a href="https://www.youtube.com/live/6uAfgKs1JKI" class="livestream-link" target="_blank">▶️ Watch on YouTube</a>
 </div>
 
 ---
