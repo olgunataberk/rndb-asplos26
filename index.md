@@ -148,28 +148,30 @@ We especially encourage early-stage research, work-in-progress results, experime
           <td class="duration-cell">20 min + Q&amp;A</td>
           <td class="speaker-cell">Onur Mutlu / Ataberk Olgun</td>
           <td>Introduction to DRAM Bender and FPGA-Based Infrastructures for Memory Systems Research</td>
-          <td>-</td>
+          <td><a href="slides/onur-R&DB-Tutorial-ToolsForEvaluatingMemory-22-March-2026.pptx" download="onur-R&DB-Tutorial-ToolsForEvaluatingMemory-22-March-2026.pptx">Download</a></td>
         </tr>
         <tr>
           <td class="time-cell">14:00</td>
           <td class="duration-cell">20 min + Q&amp;A</td>
           <td class="speaker-cell">Ataberk Olgun</td>
           <td>DRAM-Bender-Enabled Research Highlights</td>
-          <td>-</td>
+          <td><a href="slides/asplos26_rndb_workshop_ataberk.pptx" download="asplos26_rndb_workshop_ataberk.pptx">Download</a></td>
         </tr>
         <tr>
           <td class="time-cell">14:30</td>
           <td class="duration-cell">10 min + Q&amp;A</td>
           <td class="speaker-cell">Ataberk Olgun</td>
           <td>DRAM Bender Hardware &amp; Software Overview</td>
-          <td>-</td>
+          <td><a href="slides/asplos26_rndb_workshop_ataberk.pptx" download="asplos26_rndb_workshop_ataberk.pptx">Download</a></td>
         </tr>
         <tr>
           <td class="time-cell">14:40</td>
           <td class="duration-cell">15 min + Q&amp;A</td>
           <td class="speaker-cell">Ataberk Olgun</td>
           <td>DRAM Bender Example Use Demo</td>
-          <td>-</td>
+          <td><a href="slides/asplos26_rndb_workshop_ataberk.pptx" download="asplos26_rndb_workshop_ataberk.pptx">Download</a>
+          || <a href="slides/demo.cpp" download="demo.cpp">Demo Code</a>
+          </td>
         </tr>
         <tr>
           <td class="time-cell">15:00</td>
@@ -202,14 +204,14 @@ We especially encourage early-stage research, work-in-progress results, experime
           <td class="duration-cell">20 min + Q&amp;A</td>
           <td class="speaker-cell">F. Nisa Bostanci</td>
           <td>Introduction to Ramulator and Memory System Simulation</td>
-          <td>-</td>
+          <td><a href="slides/Ramulator-intro.pptx" download="Ramulator-intro.pptx">Download</a></td>
         </tr>
         <tr>
           <td class="time-cell">16:30</td>
           <td class="duration-cell">20 min + Q&amp;A</td>
           <td class="speaker-cell">F. Nisa Bostanci</td>
           <td>Ramulator-Enabled Research Highlights</td>
-          <td>-</td>
+          <td><a href="slides/Ramulator-Researchhighlights.pptx" download="Ramulator-Researchhighlights.pptx">Download</a></td>
         </tr>
         <tr>
           <td class="time-cell">17:00</td>
