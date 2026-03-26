@@ -218,7 +218,7 @@ We especially encourage early-stage research, work-in-progress results, experime
           <td class="duration-cell">25 min + Q&amp;A</td>
           <td class="speaker-cell">Hwayong Nam</td>
           <td><em>Our Experience with Ramulator and DRAM-Bender: Case Studies from DRAMScope and RoMe</em></td>
-          <td>-</td>
+          <td><a href="slides/2026-03-ASPLOS-R&DB_workshop.pptx" download="2026-03-ASPLOS-R&DB_workshop.pptx">Download</a></td>
         </tr>
         <tr>
           <td class="time-cell">17:30</td>
